@@ -11,7 +11,7 @@ interface IERC20 {
 }
 
 contract SimpleRamsesLocker {
-    address timelock;
+    address public timelock;
     event RAM_Withdrawn(uint, address);
     modifier onlyTimeLock() {
         require(
